@@ -10,7 +10,7 @@
 menu:
   home:
     text: 主页
-    url: /
+    url: /index.html
   archives:
     url: /archives
   tags:
@@ -63,7 +63,7 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 谢谢大爷~
+  title: No , thanks.
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
@@ -74,7 +74,7 @@ search: true
 hideMenu: true
 
 # 是否开启toc
-# toc: false
+# toc: true
 toc:
   list_number: true  # 是否显示数字排序
 
@@ -105,7 +105,7 @@ less:
 
 # 以下评论插件开启一个即可
 # 是否开启 disqus
-disqus_shortname: false
+disqus_shortname: true
 # 是否开启友言评论, 填写友言用户id
 uyan_uid: false
 # 是否使用 gitment，https://github.com/imsun/gitment
@@ -147,7 +147,7 @@ hyper_id: false
 canonical: false
 
 # 版权起始年份
-since_year: 2015
+since_year: 2019
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
 about: 用户页面中作者相关的描述性文字，如不需要设为 false
