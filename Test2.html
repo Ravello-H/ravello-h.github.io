@@ -6,6 +6,35 @@
     <title>导航栏</title>
 
 <script type="text/javascript" src="js/common.js"></script>
+<script>
+
+//顶部导航放置
+ravello.namespace("nav");
+function navPut() {
+	var navHeader = $('#navput:not([data-disable])');
+
+	if(navHeader.length > 0) {
+		navHeader.html('<div class="nav_mText"><span onclick="window.top.location.href=\'/\';"><img src="img/avatar.jpg" class="nicknameEmoji" style="width:20px;height:20px"> RavelloH</span></div><nav class="nav"><input type="checkbox" class="nav_cb" id="nav-menu" /><div class="nav_content"><div class="nav_logo"><a href="/" target="_self"><img src="/img/favicon.ico"><h2>RavelloH</h2></a></div><div class="dropdown"><div id="nav_wrap_user"><a href="/u/" target="_self"><div class="nav_avatarArea"><img class="avatar ga-spin" src="/favicon.ico" align="absmiddle"><span class="nav_user_message_count">Loading</span></div></a><div class="dropdown-content"><a href="/u" class="nav_drop_user_message_count">历史消息</a><a href="/more">更多</a><a href="//github.com/Ravello-H">项目</a></div></div></div><ul class="nav_list"><li><a href="//ravello-h.github.io" target="_self">主页</a></li><li><a href="/minecraft" target="_self">Minecraft</a></li><li><a href="/dynamic" target="_self">动态</a></li><li><a href="/classification" target="_self">分类</a></li><li><a href="/file" target="_self">文档</a></li><li><a href="/resources" target="_self">资源</a></li></ul></div><div class="wrap-btn"><label class="nav_btn" for="nav-menu"></label></div><div class="nav_flex"></div></nav>');
+
+
+		}
+	}
+function footerPut() {
+	var footer = document.getElementsByClassName("ifooter")[0] || false;
+	if(footer) {
+		footer.innerHTML = "<div class='footerNav'><div class='footer-menu'><ul class='menu-items'></ul></div><div class='footer-state'><div class='ravello-info'><a href='/ ' target='_blank'>ravello-h.github.io</a></div><div class='disclaimers'><span>Copyright © 2019 - 2020 RavelloH. All rights reserved. / 部分内容<code>index.html</code>使用 <a rel="license"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名-非商业性使用-相同方式共享 4.0 (CC
+                BY-NC-ND 4.0)</a> 协议授权。</span></div></div></div>";
+	}
+}
+
+function setCookie(name,value,hours) {
+	hours = Number(hours);
+    var exp = new Date();
+    exp.setTime(exp.getTime() + hours*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=/";;
+}
+</>
 </head>
 <body>
 </body>
