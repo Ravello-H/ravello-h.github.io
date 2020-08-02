@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>Test</title>
+<meta charset="utf-8"/>
+<meta name="Keywords" content="Testing" />
+<meta name="Description" content="Testning" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="author" content="aaa"/>
+<link type="text/css" rel="stylesheet" href="css/basic.css" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<script type="text/javascript" src="/js/adxico.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<style type="text/css">
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:15px/1.5 "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",cursive,arial,"\5B8B\4F53";-webkit-font-smoothing:antialiased;margin:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;color:#000}
+li,ol,ul{list-style:none}
+
+.swiper-slide {display: flex;align-items: center;}
+.swiper-slide.twoyear {
+	background: #fff;
+}
+.swiper-slide.index {
+	background: #333 url('/img/ganxiaozhe.png') no-repeat center center;
+	background-size: 500px;
+}
+.swiper-slide.aqua {
+	background-image: -moz-linear-gradient(90deg, #0895de 0%, #68f7fa 100%);
+	background-image: -webkit-linear-gradient(90deg, #0895de 0%, #68f7fa 100%);
+	background-image: -ms-linear-gradient(90deg, #0895de 0%, #68f7fa 100%);
+}
+.swiper-slide.red {
+	background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+	background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+	background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+}
+.swiper-slide.purple {
+	background-image: -moz-linear-gradient(90deg, #5f4b8b 0%, #ad6aaf 100%);
+	background-image: -webkit-linear-gradient(90deg, #5f4b8b 0%, #ad6aaf 100%);
+	background-image: -ms-linear-gradient(90deg, #5f4b8b 0%, #ad6aaf 100%);
+}
+.swiper-slide.yellow {
+	background-image: -moz-linear-gradient(90deg, #b68400 0%, #ebe754 100%);
+	background-image: -webkit-linear-gradient(90deg, #b68400 0%, #ebe754 100%);
+	background-image: -ms-linear-gradient(90deg, #b68400 0%, #ebe754 100%);
+}
+.swiper-slide table {
+	table-layout: fixed;width: auto;empty-cells: show;border-collapse: collapse;margin:0 auto;margin-bottom:66px;
+}
+.swiper-slide table td {padding:0 32px;}
+.swiper-slide a {color:white;border-bottom:2px dashed rgba(255,255,255,0.9);}
+.bs-img {transform:rotate(330deg);width:186px;height:186px;}
+.bs-img-villager {transform:rotate(0deg);width:186px;height:292px;}
+.swiper-container {position: absolute;width: 100%;height: calc(100% - 50px);}
+/*PC*/
+@media screen and (min-width:561px){
+	.allbox{min-width:950px;resize:both;overflow:auto}
+
+	.title-5x {font-size:52px;font-weight:bold;}
+	.title-3x {font-size:25px;font-weight:500;}
+	.title-2x {font-size:19px;font-weight:500;line-height:42px;}
+}
+/*移动端*/
+@media screen and (max-width:560px){
+	.allbox{min-width:328px;resize:both;overflow:auto}
+	.swiper-slide table td {display:table-row;text-align: center;}
+	.swiper-slide table.tab-text td {padding:0 8px;}
+	.bs-img {transform:rotate(0deg);width:156px;height:156px;padding-top:30px;}
+
+	.title-5x {font-size:52px;font-weight:bold;}
+	.title-3x {font-size:23px;font-weight:500;}
+	.title-2x {font-size:17px;font-weight:500;line-height:42px;}
+}   /* 移动端END */
+.swiper-slide table.tab-text td {display:table-cell;text-align: left;}
+.t-w-bold {font-weight: 800;}
+table.tab-incell{margin:0;}
+table.tab-incell tr td {padding:0;}
+
+</style>
+</head>
+<body>
+<div id="all-container">
+	<div id="navput"></div>   <!--navput END-->
+
+	<div class='swiper-container'>
+		<div class="swiper-wrapper">
+			<div class='swiper-slide index'>
+				<table class="ani t-c-white" swiper-animate-effect="fadeInDown">
+					<tr>
+						<td>
+							<p class='title-5x'>甘小蔗</p>
+							<p class='title-3x'>| 我的世界 | 一个小而温馨的地方。</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class='swiper-slide bg-aqua-blue'>
+				<table class="ani t-c-white" swiper-animate-effect="bounceInRight">
+					<tr>
+						<td>
+							<p class='title-5x'><a href='shop/'>甘蔗小铺</a></p>
+							<p class='title-3x'>正品保质，限时特惠。</p>
+						</td>
+						<td><img class='bs-img-villager' src='img/mc/villager.png'></td>
+					</tr>
+				</table>
+			</div>
+			<div class='swiper-slide red'>
+				<table class="ani t-c-white" swiper-animate-effect="zoomIn">
+					<tr>
+						<td>
+							<p class='title-5x'><a href='mc/'>我的世界</a></p>
+							<p class='title-3x'><a href='mc/tool/'>辅助工具</a>、教程、论坛。</p>
+							<p class='title-2x'><i class='fa fa-comments-o'></i> 友好交流环境，致力于解决疑难杂症。</p>
+						</td>
+						<td><img class='bs-img' src='img/mc/redstone_block.png'></td>
+					</tr>
+				</table>
+			</div>
+			<div class='swiper-slide purple'>
+				<table class="ani t-c-white" swiper-animate-effect="lightSpeedIn">
+					<tr>
+						<td>
+							<p class='title-5x'><a href='mc/tool/?from=index'>GMCT</a></p>
+							<p class='title-3x'>我的世界命令生成器(最新版支持)</p>
+							<p class='title-2x'><i class='fa fa-code'></i> 支持物品实体、创建商城、副本、彩色武器、浮空字、技能等等</p>
+						</td>
+						<td><img class='bs-img' src='img/mc/znz.png'></td>
+					</tr>
+				</table>
+			</div>
+			<div class='swiper-slide yellow'>
+				<table class="ani t-c-white" swiper-animate-effect="flip">
+					<tr>
+						<td>
+							<p class='title-5x'><a href='//jz.ganxiaozhe.com'>网站开发&设计</a></p>
+							<p class='title-3x'>一站式服务，价格透明，下单有礼。</p>
+							<p class='title-2x'><i class='fa fa-globe'></i> 优选第三方，为您提供最优方案。</p>
+						</td>
+						<td><img class='bs-img' src='img/mc/crafttable.png'></td>
+					</tr>
+				</table>
+			</div>
+		</div> <!-- wrapper -->
+		<div class="swiper-pagination"></div>
+	</div> <!-- swiper-container -->
+</div>
+
+<script type="text/javascript" src="lib/js/swiper.min.js"></script>
+<script type="text/javascript" src="lib/js/swiper.animate.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction: 'horizontal',
+			effect : 'coverflow',
+			speed: 1500,
+			setWrapperSize: true,
+			mousewheel: true,
+			loop: false, // 循环模式选项
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true, // 此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+			},
+			on:{
+				init: function(){
+					swiperAnimateCache(this); //隐藏动画元素
+					swiperAnimate(this);
+				},
+				slideChangeTransitionEnd: function(){
+					swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+				}
+			}
+		});
+	});
+
+	function _existAllLoad() {
+	}
+</script>
+</body>
+</html>
