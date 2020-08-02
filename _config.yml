@@ -10,7 +10,7 @@
 menu:
   home:
     text: 主页
-    url: /index.html
+    url: /
   archives:
     url: /archives
   tags:
@@ -19,14 +19,14 @@ menu:
     text: Categories
     url: /categories
   github:
-    url: https://github.com/yscoder
+    url: https://github.com/Ravello-H
     target: _blank
   weibo:
-    url: http://www.weibo.com/ysweb
+    url: http://www.weibo.com/Dr_Horlzons
     target: _blank
   link:
     text: 测试
-    url: /custom
+    url: /test
 
 # 你的头像url
 avatar: /img/avatar.jpg
@@ -38,7 +38,7 @@ brand: /img/brand.jpg
 favicon: /favicon.ico
 
 # email
-email: 634206017@qq.com
+email: dr_hamilton@foxmail.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -62,8 +62,8 @@ show_last_updated: true
 share: true
 
 # 是否开启打赏，关闭 reward: false
-reward:
-  title: No , thanks.
+reward:false
+  title: 谢谢大爷~
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
@@ -74,7 +74,7 @@ search: true
 hideMenu: true
 
 # 是否开启toc
-# toc: true
+# toc: false
 toc:
   list_number: true  # 是否显示数字排序
 
@@ -105,7 +105,7 @@ less:
 
 # 以下评论插件开启一个即可
 # 是否开启 disqus
-disqus_shortname: true
+disqus_shortname: false
 # 是否开启友言评论, 填写友言用户id
 uyan_uid: false
 # 是否使用 gitment，https://github.com/imsun/gitment
@@ -150,7 +150,7 @@ canonical: false
 since_year: 2019
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: 用户页面中作者相关的描述性文字，如不需要设为 true
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
