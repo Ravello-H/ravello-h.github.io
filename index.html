@@ -99,6 +99,9 @@
 
 <body>
 
+<style type="text/css"> html, body { height: 100%; } body { overflow: hidden; display: flex; justify-content: center; align-items: center; background: #222; } .line { width: 674px; border-right: 2px solid #eee; font-size: 28px; text-align: center; white-space: nowrap; overflow: hidden; } .animation { animation: grow 4s steps(44) 1s normal both, blink 0.5s steps(44) infinite normal; } @keyframes grow { from { width: 0; } to { width: 647px; } } @keyframes blink { from { border-right-color: #eee; } to { border-right-color: #222; } } 
+
+</style>
 <script>
 /**
  * 横竖屏
@@ -213,7 +216,7 @@ function changeOrientation($print) {
         
           <li class="waves-block waves-effect">
             <a href="/minecraft" class="hvr-icon-down" >
-             <svg t="1596283510632" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6537" width="16" height="16"><path d="M170.666667 85.333333h682.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v682.666666a85.333333 85.333333 0 0 1-85.333334 85.333334H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334m85.333333 170.666667v170.666667h170.666667v85.333333H341.333333v256h85.333334v-85.333333h170.666666v85.333333h85.333334v-256h-85.333334v-85.333333h170.666667V256h-170.666667v170.666667h-170.666666V256H256z" fill="#8a8a8a" p-id="6538"></path></svg>
+             <svg t="1596283510632" class="icon" viewBox="1024 1024 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6537" width="16" height="16"><path d="M170.666667 85.333333h682.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v682.666666a85.333333 85.333333 0 0 1-85.333334 85.333334H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334m85.333333 170.666667v170.666667h170.666667v85.333333H341.333333v256h85.333334v-85.333333h170.666666v85.333333h85.333334v-256h-85.333334v-85.333333h170.666667V256h-170.666667v170.666667h-170.666666V256H256z" fill="#8a8a8a" p-id="6538"></path></svg>
               Minecraft
             </a>
           </li>
@@ -304,7 +307,7 @@ function changeOrientation($print) {
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
 
-<p><svg t="1596284342381" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16238" width="32" height="32"><path d="M261.04 478.06L649.74 89.38c18.74-18.74 49.14-18.74 67.88 0l45.34 45.34c18.72 18.72 18.74 49.04 0.08 67.8L454.98 512l308.04 309.5c18.68 18.76 18.64 49.08-0.08 67.8l-45.34 45.34c-18.74 18.74-49.14 18.74-67.88 0L261.04 545.94c-18.74-18.74-18.74-49.14 0-67.88z" p-id="16239" fill="#e6e6e6"></path></svg></p>
+<svg t="1596284342381" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16238" width="32" height="32"><path d="M261.04 478.06L649.74 89.38c18.74-18.74 49.14-18.74 67.88 0l45.34 45.34c18.72 18.72 18.74 49.04 0.08 67.8L454.98 512l308.04 309.5c18.68 18.76 18.64 49.08-0.08 67.8l-45.34 45.34c-18.74 18.74-49.14 18.74-67.88 0L261.04 545.94c-18.74-18.74-18.74-49.14 0-67.88z" p-id="16239" fill="#e6e6e6"></path></svg>
             </a>
             <input type="text" id="key" class="search-input" autocomplete="on"
                 placeholder="搜索Ravello-H">
@@ -339,8 +342,8 @@ function changeOrientation($print) {
         <div class="container">
             <div class="row justify-content-center">
                 <div class="mbr-white col-md-10">
-                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">Hello ! Welcome to there.</p>
-                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">How are you?</p>
+                    <p class="line animation">Hello ! Welcome to there.<br>
+                    How are you?</p>
                 </div>
             </div>
         </div>
