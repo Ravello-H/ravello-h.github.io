@@ -152,8 +152,8 @@ function changeOrientation($print) {
       localStorage.darkTheme = 'light-theme';
     }
     window.darkThemeToggle = function () {
-      var moon_icon = '<i class="icon icon-lg icon-moon-o"></i>',
-        sun_icon = '<i class="icon icon-lg icon-sun-o"></i>',
+      var moon_icon = '<svg t="1596343328346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10278" width="32" height="32"><path d="M756.004571 146.724571A328.045714 328.045714 0 0 1 877.714286 402.212571c0 104.667429-48.274286 200.704-132.388572 263.533715-20.48 15.36-32.182857 36.132571-32.182857 57.051428 0 35.108571-28.452571 63.488-63.488 63.488H445.952a61.952 61.952 0 0 1-61.952-62.025143c0-22.016-9.435429-42.276571-24.502857-52.882285a327.826286 327.826286 0 0 1-135.094857-327.094857A327.899429 327.899429 0 0 1 478.208 80.457143a330.898286 330.898286 0 0 1 277.796571 66.340571zM658.285714 841.142857A54.857143 54.857143 0 0 1 658.285714 950.857143H438.857143a54.857143 54.857143 0 0 1 0-109.714286h219.428571z" p-id="10279" fill="#e6e6e6"></path></svg>',
+        sun_icon = '<svg t="1596343399148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11599" width="32" height="32"><path d="M707.291429 273.554286A308.516571 308.516571 0 0 1 818.468571 512a306.468571 306.468571 0 0 1-121.051428 245.906286c-18.724571 14.336-29.476571 33.645714-29.476572 53.248a59.245714 59.245714 0 0 1-59.245714 59.245714H424.740571a57.782857 57.782857 0 0 1-57.856-57.782857c0-20.626286-8.630857-39.497143-22.454857-49.444572C248.100571 694.125714 200.777143 577.243429 220.891429 457.874286c20.626286-122.148571 113.956571-221.110857 232.301714-246.345143a298.276571 298.276571 0 0 1 254.098286 61.878857zM617.764571 921.6c27.721143 0 50.176 22.893714 50.176 51.2 0 28.306286-22.454857 51.2-50.176 51.2H417.060571a50.761143 50.761143 0 0 1-49.005714-51.2c0-27.794286 21.723429-50.541714 49.005714-51.2h200.777143zM517.412571 0c27.794286 0 50.176 22.454857 50.176 50.176v53.248a50.176 50.176 0 1 1-100.352 0V50.176c0-27.721143 22.454857-50.176 50.176-50.176z m354.889143 222.281143l-35.547428 36.278857a49.664 49.664 0 0 1-70.948572 0 51.712 51.712 0 0 1 0-72.411429l35.547429-36.205714a49.737143 49.737143 0 0 1 70.948571 0c19.748571 20.041143 19.748571 52.224 0 72.338286z m52.370286 245.394286h48.128a51.2 51.2 0 0 1 0 102.4h-48.128a51.2 51.2 0 1 1 0-102.4z m-726.601143-209.188572l-35.474286-36.205714a51.712 51.712 0 0 1 0-72.411429 49.664 49.664 0 0 1 70.948572 0l35.474286 36.278857c19.748571 20.114286 19.748571 52.297143 0 72.411429a49.737143 49.737143 0 0 1-70.948572 0zM0 518.875429a51.2 51.2 0 0 1 51.2-51.2h48.128a51.2 51.2 0 1 1 0 102.4H51.2a51.2 51.2 0 0 1-51.2-51.2z" p-id="11600" fill="#e6e6e6"></path></svg>',
         htmlBody = window.document.body,
         toggleBtn = window.document.getElementById('darkThemeToggle');
       if (localStorage.darkTheme === 'dark-theme') {
@@ -173,8 +173,8 @@ function changeOrientation($print) {
     <aside id="menu"  >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
+       <p> <svg t="1596342712389" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2415" width="32" height="32"><path d="M519.02036023 459.47959989L221.8941505 162.35411435a37.07885742 37.07885742 0 1 0-52.45354772 52.40502656l297.12476134 297.15010821L169.44060278 809.05863314a37.07885742 37.07885742 0 1 0 52.42964924 52.42892505l297.15010821-297.12476136 297.15010822 297.12476136a37.07885742 37.07885742 0 1 0 52.42892504-52.40430237l-297.12476135-297.1740067 297.12476135-297.12548553a37.07885742 37.07885742 0 1 0-52.42892504-52.42964924L519.04498291 459.47959989z" p-id="2416" fill="#e6e6e6"></path></svg>
+    </p></a>
     <div class="brand-wrap" style="background-image:url(/img/sidenav-brand-izuna.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
@@ -182,7 +182,7 @@ function changeOrientation($print) {
         </a>
         <hgroup class="introduce">
           <h5 class="sitename"><a href="/" style="color: inherit;">Ravello-H</a></h5>
-          <a href="mailto:dragon-fish@qq.com" title="dragon-fish@qq.com" class="mail">往日不再... [E-mail to me]</a>
+          <a href="mailto:dragon-fish@qq.com" title="dr_hamilton@qq.com" class="mail">往日不再... [E-mail to me]</a>
         </hgroup>
       </div>
     </div>
@@ -344,8 +344,8 @@ function changeOrientation($print) {
         <div class="container">
             <div class="row justify-content-center">
                 <div class="mbr-white col-md-10">
-                    <h5 class="mbr-section-title align-center pb-3 mbr-fonts-style display-1">Hello ! Welcome to there.</h5>
-                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">This is an empty page.</p>
+                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">Hello ! Welcome to there.</p>
+                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">How are you?</p>
                 </div>
             </div>
         </div>
