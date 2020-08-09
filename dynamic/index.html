@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS -->
+<style type="text/css">
+        svg{text-align:center;vertical-align:middle;display:table-cell;margin-bottom:-5px;}
+        svg{display:inline-block;margin-bottom:-5px;}
+	
+	.icons {margin-bottom: -2px;margin-left: -1px;}
+</style>
+
+<!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/5cacf33cd5.js" crossorigin="anonymous"></script>
+<link type="text/css" rel="stylesheet" href="css/basic.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />  
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/demo.css" />
+<link type="text/css" rel="stylesheet" href="css/hover-min.css" />
+<link type="text/css" rel="stylesheet" href="css/hover.css" />
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/adxico.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170980930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170980930-1');
+</script>
+<!-- End Google Analytics -->
+
+
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
+
+    <meta charset="utf-8">
+    
+    <!-- Google Ads -->
+    <script data-ad-client="ca-pub-5028262357303610" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- End Google Ads -->
+    
+    
+    
+    <title>动态 | Ravello-H</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#3F51B5"><!-- 主题色 -->
+    
+    
+    <meta name="keywords" content="Ravello-H,Ravello-H,,Ravello-H,Ravello-H">
+    <meta name="description" content="A GitHub Blog by Hexo">
+    
+<meta property="og:type" content="website">
+<meta property="og:title" content="RavelloH">
+<meta property="og:url" content="https://ravello-h.github.io/">
+<meta property="og:site_name" content="Ravello-H">
+<meta property="og:description" content="A GitHub Blog by Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Ravello-H">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="Dr_Hamilton">
+<meta property="article:tag" content="Ravello-H">
+<meta property="article:tag" content="Ravello-H">
+<meta property="article:tag" content="Dr_Horlzons">
+<meta property="article:tag" content="Horlzons">
+<meta property="article:tag" content="Ravello">
+
+<meta name="twitter:card" content="summary">
+    
+    <link rel="alternate" type="application/atom+xml" title="Ravello-H" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts = []</script>
+
+    <link rel="stylesheet" href="/=statics/common.css">
+    
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<script>
+/**
+ * 横竖屏
+ * @param {Object}
+ */
+function changeOrientation($print) {  
+  var width = document.documentElement.clientWidth;
+  var height =  document.documentElement.clientHeight;
+  if(width < height) {
+      $print.width(height);
+      $print.height(width);
+      $print.css('top',  (height - width) / 2 );
+      $print.css('left',  0 - (height - width) / 2 );
+      $print.css('transform', 'rotate(90deg)');
+      $print.css('transform-origin', '50% 50%');
+  } 
+ 
+  var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+      
+      window.addEventListener(evt, function() {
+ 
+      setTimeout(function() {
+          var width = document.documentElement.clientWidth;
+          var height =  document.documentElement.clientHeight;
+          // 刷新
+          initCityWidth();
+          // 初始化
+          cityCrashDistanceArr = initCityCrashDistance();
+    
+        if( width > height ){
+            $print.width(width);
+            $print.height(height);
+            $print.css('top',  0 );
+            $print.css('left',  0 );
+            $print.css('transform' , 'none');
+            $print.css('transform-origin' , '50% 50%');
+         }
+         else {
+          $print.width(height);
+            $print.height(width);
+            $print.css('top',  (height-width)/2 );
+            $print.css('left',  0-(height-width)/2 );
+            $print.css('transform' , 'rotate(90deg)');
+            $print.css('transform-origin' , '50% 50%');
+         }
+    }, 300);    
+   }, false);
+}</script>
+
+
+<script>
+  /**
+   * indigo dark-theme
+   * 夜间模式
+   */
+  !(function () {
+    var htmlBody = window.document.body;
+    if (localStorage.darkTheme === 'dark-theme') {
+      htmlBody.classList.add('dark-theme');
+    } else {
+      localStorage.darkTheme = 'light-theme';
+    }
+    window.darkThemeToggle = function () {
+      var moon_icon = '<svg t="1596343328346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10278" width="33" height="33"><path d="M756.004571 146.724571A328.045714 328.045714 0 0 1 877.714286 402.212571c0 104.667429-48.274286 200.704-132.388572 263.533715-20.48 15.36-32.182857 36.132571-32.182857 57.051428 0 35.108571-28.452571 63.488-63.488 63.488H445.952a61.952 61.952 0 0 1-61.952-62.025143c0-22.016-9.435429-42.276571-24.502857-52.882285a327.826286 327.826286 0 0 1-135.094857-327.094857A327.899429 327.899429 0 0 1 478.208 80.457143a330.898286 330.898286 0 0 1 277.796571 66.340571zM658.285714 841.142857A54.857143 54.857143 0 0 1 658.285714 950.857143H438.857143a54.857143 54.857143 0 0 1 0-109.714286h219.428571z" p-id="10279" fill="#e6e6e6"></path></svg>',
+        sun_icon = '<svg t="1596343399148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11599" width="32" height="32"><path d="M707.291429 273.554286A308.516571 308.516571 0 0 1 818.468571 512a306.468571 306.468571 0 0 1-121.051428 245.906286c-18.724571 14.336-29.476571 33.645714-29.476572 53.248a59.245714 59.245714 0 0 1-59.245714 59.245714H424.740571a57.782857 57.782857 0 0 1-57.856-57.782857c0-20.626286-8.630857-39.497143-22.454857-49.444572C248.100571 694.125714 200.777143 577.243429 220.891429 457.874286c20.626286-122.148571 113.956571-221.110857 232.301714-246.345143a298.276571 298.276571 0 0 1 254.098286 61.878857zM617.764571 921.6c27.721143 0 50.176 22.893714 50.176 51.2 0 28.306286-22.454857 51.2-50.176 51.2H417.060571a50.761143 50.761143 0 0 1-49.005714-51.2c0-27.794286 21.723429-50.541714 49.005714-51.2h200.777143zM517.412571 0c27.794286 0 50.176 22.454857 50.176 50.176v53.248a50.176 50.176 0 1 1-100.352 0V50.176c0-27.721143 22.454857-50.176 50.176-50.176z m354.889143 222.281143l-35.547428 36.278857a49.664 49.664 0 0 1-70.948572 0 51.712 51.712 0 0 1 0-72.411429l35.547429-36.205714a49.737143 49.737143 0 0 1 70.948571 0c19.748571 20.041143 19.748571 52.224 0 72.338286z m52.370286 245.394286h48.128a51.2 51.2 0 0 1 0 102.4h-48.128a51.2 51.2 0 1 1 0-102.4z m-726.601143-209.188572l-35.474286-36.205714a51.712 51.712 0 0 1 0-72.411429 49.664 49.664 0 0 1 70.948572 0l35.474286 36.278857c19.748571 20.114286 19.748571 52.297143 0 72.411429a49.737143 49.737143 0 0 1-70.948572 0zM0 518.875429a51.2 51.2 0 0 1 51.2-51.2h48.128a51.2 51.2 0 1 1 0 102.4H51.2a51.2 51.2 0 0 1-51.2-51.2z" p-id="11600" fill="#e6e6e6"></path></svg>',
+        htmlBody = window.document.body,
+        toggleBtn = window.document.getElementById('darkThemeToggle');
+      if (localStorage.darkTheme === 'dark-theme') {
+        htmlBody.classList.remove('dark-theme');
+        toggleBtn.innerHTML = sun_icon;
+        localStorage.darkTheme = 'light-theme';
+      } else {
+        htmlBody.classList.add('dark-theme');
+        toggleBtn.innerHTML = moon_icon;
+        localStorage.darkTheme = 'dark-theme';
+      }
+    }
+  }());
+</script>
+    <div id="loading" class="active"></div>
+    <aside id="menu">
+		  <div class="inner flex-row-vertical">
+	    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <svg t="1596342712389" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2415" width="32" height="32"><path d="M519.02036023 459.47959989L221.8941505 162.35411435a37.07885742 37.07885742 0 1 0-52.45354772 52.40502656l297.12476134 297.15010821L169.44060278 809.05863314a37.07885742 37.07885742 0 1 0 52.42964924 52.42892505l297.15010821-297.12476136 297.15010822 297.12476136a37.07885742 37.07885742 0 1 0 52.42892504-52.40430237l-297.12476135-297.1740067 297.12476135-297.12548553a37.07885742 37.07885742 0 1 0-52.42892504-52.42964924L519.04498291 459.47959989z" p-id="2416" fill="#e6e6e6"></path></svg></a>
+    <div class="brand-wrap" style="background-image:url(/img/sidenav-brand-izuna.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="sitename"><a href="/" style="color: inherit;">Ravello-H</a></h5>
+          <a href="mailto:dr_hamilton@qq.com" title="dr_hamilton@qq.com" class="mail">往日不再... <br>[Contact me]</a>
+        </hgroup>
+      </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+          <li class="waves-block waves-effect">
+            <a href="/" class="hvr-icon-down" >
+		          <svg t="1596283178409" class="icons" viewBox="0 -10 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6150" width="16" height="16"><path d="M422.63 891.821V623.712h178.74v268.109h223.424V534.342h134.054L512 132.179 65.152 534.342h134.054V891.82H422.63z" p-id="6151" fill="#8a8a8a"></path></svg>
+              首页 | Home
+            </a>
+          </li>
+        
+          <li class="label">
+            <span>
+              杂项 | More
+            </span>
+          </li> 
+        
+          <li class="waves-block waves-effect">
+            <a href="/minecraft" class="hvr-icon-down" >
+             <svg t="1596283510632" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6537" width="16" height="16"><path d="M170.666667 85.333333h682.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v682.666666a85.333333 85.333333 0 0 1-85.333334 85.333334H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334m85.333333 170.666667v170.666667h170.666667v85.333333H341.333333v256h85.333334v-85.333333h170.666666v85.333333h85.333334v-256h-85.333334v-85.333333h170.666667V256h-170.666667v170.666667h-170.666666V256H256z" fill="#8a8a8a" p-id="6538"></path></svg>
+              Minecraft
+            </a>
+          </li>
+        
+          <li class="waves-block waves-effect">
+            <a href="/resources" class="hvr-icon-down" >
+		           <svg t="1596283626889" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7434" width="16" height="16"><path d="M625.28 640h-226.56l-64-96H32v-64h337.28l64 96h157.44l64-96H992v64h-302.72l-64 96zM480 0h64v448h-64z" fill="#8a8a8a" p-id="7435"></path><path d="M512 493.12l-118.72-118.4 45.44-45.44 73.28 73.6 73.28-73.6 45.44 45.44-118.72 118.4z" fill="#8a8a8a" p-id="7436"></path><path d="M1024 1024H0V506.24L137.6 128H416v64H182.4L64 517.76V960h896V517.76L841.6 192H608V128h278.4L1024 506.24V1024z" fill="#8a8a8a" p-id="7437"></path></svg>
+              资源
+            </a>
+          </li>
+      
+	      <li class="waves-block waves-effect">
+            <a href="/journal"  class="icons" >
+              <svg t="1596942613297" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3566" width="16" height="16"><path d="M871.616 64H152.384c-31.488 0-60.416 25.28-60.416 58.24v779.52c0 32.896 26.24 58.24 60.352 58.24h719.232c34.112 0 60.352-25.344 60.352-58.24V122.24c0.128-32.96-28.8-58.24-60.288-58.24zM286.272 512c-23.616 0-44.672-20.224-44.672-43.008 0-22.784 20.992-43.008 44.608-43.008 23.616 0 44.608 20.224 44.608 43.008A43.328 43.328 0 0 1 286.272 512z m0-202.496c-23.616 0-44.608-20.224-44.608-43.008 0-22.784 20.992-43.008 44.608-43.008 23.616 0 44.608 20.224 44.608 43.008a43.456 43.456 0 0 1-44.608 43.008zM737.728 512H435.904c-23.68 0-44.672-20.224-44.672-43.008 0-22.784 20.992-43.008 44.608-43.008h299.264c23.616 0 44.608 20.224 44.608 43.008a42.752 42.752 0 0 1-41.984 43.008z m0-202.496H435.904c-23.616 0-44.608-20.224-44.608-43.008 0-22.784 20.992-43.008 44.608-43.008h299.264c23.616 0 44.608 20.224 44.608 43.008a42.88 42.88 0 0 1-42.048 43.008z" p-id="3567" fill="#8a8a8a"></path></svg>
+             
+		    日志
+            </a>
+          </li>
+
+        
+          <li class="label">
+            <span>
+              站内 | Station
+            </span>
+          </li> 
+        
+          <li class="waves-block waves-effect active">
+            <a href="/dynamic"  class="hvr-icon-down" >
+              <svg t="1596283870296" class="icons" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8490" width="16" height="16"><path d="M410.5664 1015.68l29.888 0c8 0 14.464-6.464 14.528-14.464 0.128-45.696 0.448-184.64-0.064-197.056-0.576-14.912 5.888-31.168 12.352-38.72 5.952-6.976 419.648-489.024 484.096-564.16 2.304-2.688 6.592-0.576 5.952 2.88-18.304 93.568-131.776 673.6-133.44 681.92-1.408 7.04-5.952 9.984-12.352 7.936-6.848-2.24-229.824-71.68-278.72-86.912-5.248-1.6-10.816 1.216-12.48 6.464l-8 24.192c-1.728 5.312 1.152 11.008 6.528 12.672 48.064 15.104 259.584 81.472 283.136 88.512 29.184 8.704 59.52-10.112 65.728-43.264 5.12-27.328 144-734.208 146.048-746.944 2.048-12.736 5.248-34.752-6.784-43.328-19.008-13.504-36.352-7.552-42.496-3.136-0.64 0.448-1.472 0.512-2.176 0.896l-3.2 1.792c0 0-900.16 480.64-932.288 497.984-32.128 17.28-30.656 53.76-3.776 62.528 23.936 7.744 240.896 78.208 289.216 93.888 5.248 1.728 10.944-1.152 12.608-6.464l7.68-23.552c1.728-5.248-1.216-10.944-6.464-12.672l-236.736-76.16c-8.448-2.688-9.472-14.208-1.664-18.368l808.256-432.576c2.304-1.216 4.608 1.6 2.88 3.584-60.928 71.04-442.56 515.584-459.648 535.232-18.496 21.312-28.928 43.52-28.928 71.616C410.3104 828.096 410.5664 1015.68 410.5664 1015.68L410.5664 1015.68M410.5664 1015.68" p-id="8491" fill="#8a8a8a"></path><path d="M440.4544 1018.432l-32.64 0-0.256-218.496c-0.064-26.816 9.344-50.112 29.568-73.408 16.576-19.072 381.056-443.712 458.176-533.504l-806.272 431.552c-3.136 1.664-4.032 4.736-3.776 7.04 0.192 2.304 1.664 5.184 4.992 6.272l236.736 76.16c3.264 1.024 5.888 3.328 7.488 6.336 1.536 3.072 1.856 6.528 0.768 9.792l-7.68 23.616c-2.176 6.72-9.408 10.368-16.128 8.192l-289.216-93.888c-12.672-4.096-20.864-14.144-22.08-26.944-1.408-15.872 8.256-31.424 25.344-40.64 31.744-17.088 923.264-493.12 932.288-497.984l3.136-1.728c0.576-0.32 1.088-0.448 1.472-0.576 7.488-5.248 26.24-11.136 46.144 3.008 13.76 9.728 9.792 34.24 7.936 46.016-1.152 7.296-46.72 239.68-86.912 444.736-30.528 155.904-56.96 290.56-59.136 302.272-3.2 17.152-12.608 31.36-26.56 39.872-12.928 7.936-28.096 9.856-42.624 5.504-22.016-6.592-205.376-64.064-283.136-88.512-3.264-1.024-5.952-3.264-7.552-6.336-1.6-3.072-1.856-6.592-0.768-9.856l8-24.192c2.176-6.592 9.344-10.304 15.936-8.192l10.112 3.136c64.832 20.224 262.144 81.728 268.608 83.776 2.24 0.704 4.096 0.64 5.504-0.192 1.984-1.152 2.88-3.712 3.264-5.696 1.088-5.568 52.352-267.584 91.584-468.16l41.856-213.76c0-0.128 0.064-0.512-0.32-0.704-0.448-0.192-0.704 0.064-0.768 0.192-64.448 75.136-478.144 557.184-484.096 564.16-6.144 7.168-12.224 22.912-11.712 36.864 0.448 12.672 0.128 154.112 0.064 197.12C457.7344 1010.752 449.9264 1018.432 440.4544 1018.432zM413.3184 1012.928l27.136 0c6.464 0 11.712-5.248 11.712-11.712 0.064-30.592 0.448-184-0.064-196.928-0.576-15.872 6.272-32.768 12.992-40.64 6.016-6.976 419.648-489.024 484.096-564.16 1.856-2.176 4.8-2.752 7.36-1.536 2.56 1.216 3.904 3.968 3.392 6.72l-41.856 213.76c-39.232 200.576-90.496 462.528-91.648 468.16-0.832 4.416-2.88 7.616-5.888 9.408-2.816 1.664-6.272 1.856-10.048 0.64-6.464-2.048-203.712-63.552-268.608-83.776l-10.112-3.136c-3.776-1.216-7.808 0.896-9.024 4.672l-8 24.192c-0.64 1.856-0.448 3.84 0.448 5.568 0.896 1.728 2.432 3.008 4.288 3.584 60.672 19.072 260.48 81.728 283.072 88.448 13.056 3.904 26.56 2.112 38.144-4.928 12.608-7.68 21.12-20.544 24.064-36.16 2.176-11.776 28.608-146.432 59.136-302.336 40.192-204.992 85.696-437.312 86.848-444.544 1.728-10.688 5.248-32.896-5.632-40.64-17.344-12.352-33.28-7.488-39.296-3.136-0.704 0.512-1.408 0.768-1.984 0.896l-3.648 1.92c-9.024 4.8-900.544 480.832-932.288 497.984-18.048 9.728-23.424 24.576-22.464 35.264 0.96 10.496 7.744 18.752 18.24 22.144l289.216 93.888c3.776 1.216 7.872-0.832 9.152-4.672l7.68-23.616c0.576-1.856 0.448-3.84-0.448-5.568-0.896-1.728-2.368-3.008-4.224-3.584l-236.736-76.16c-4.992-1.6-8.384-5.824-8.832-11.008-0.448-5.184 2.112-9.984 6.72-12.416l808.256-432.576c2.24-1.216 4.864-0.64 6.4 1.28 1.6 1.984 1.536 4.672-0.128 6.528-73.856 86.016-443.008 516.032-459.648 535.232-19.584 22.528-28.288 44.032-28.224 69.76L413.3184 1012.928z" p-id="8492" fill="#8a8a8a"></path></svg>
+              动态
+            </a>
+          </li>
+	      
+        <li class="waves-block waves-effect">
+            <a href="/classification"  class="hvr-icon-down" >
+              <svg t="1596283927084" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9376" width="16" height="16"><path d="M49.4592 149.13536l266.24 0 0 81.92-266.24 0 0-81.92Z" p-id="9377" fill="#8a8a8a"></path><path d="M49.4592 886.41536l860.16 0 0 81.92-860.16 0 0-81.92Z" p-id="9378" fill="#8a8a8a"></path><path d="M49.4592 517.77536l266.24 0 0 81.92-266.24 0 0-81.92Z" p-id="9379" fill="#8a8a8a"></path><path d="M894.19776 811.97056c-8.51968-1.76128-16.36352-6.77888-21.52448-14.6432l-99.69664-151.79776c-10.32192-15.68768-5.9392-36.80256 9.74848-47.104 15.70816-10.32192 36.78208-5.95968 47.104 9.74848l99.69664 151.79776c10.32192 15.68768 5.9392 36.80256-9.74848 47.104C911.91296 812.25728 902.71744 813.75232 894.19776 811.97056z" p-id="9380" fill="#8a8a8a"></path><path d="M592.62976 684.05248c-171.68384-35.55328-282.03008-203.5712-246.4768-375.25504s203.5712-282.03008 375.25504-246.4768 282.03008 203.5712 246.4768 375.25504S764.3136 719.60576 592.62976 684.05248zM901.26336 423.77216c27.93472-134.90176-58.75712-266.89536-193.65888-294.85056s-266.89536 58.75712-294.85056 193.65888 58.75712 266.89536 193.65888 294.85056C741.31456 645.36576 873.32864 558.67392 901.26336 423.77216z" p-id="9381" fill="#8a8a8a"></path></svg>
+              分类
+            </a>
+          </li>
+
+           <li class="waves-block waves-effect">
+            <a href="tags"  class="icons" >
+<svg t="1596942828972" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4667" width="16" height="16"><path d="M800.695 599.137l-425.09-425.09c-31.199-31.199-81.782-31.199-112.981 0L121.399 315.273c-31.199 31.199-31.199 81.782 0 112.981l425.09 425.09c31.199 31.199 81.782 31.199 112.981 0l141.226-141.226c31.198-31.199 31.198-81.782-0.001-112.981zM261.424 391.484c-21.377-21.377-21.376-56.035 0-77.411s56.034-21.377 77.411 0c21.376 21.376 21.376 56.034 0 77.411-21.376 21.376-56.035 21.376-77.411 0z" fill="#8a8a8a" p-id="4668"></path><path d="M902.602 595.74l-425.09-425.09c-24.465-24.466-60.848-29.738-90.459-15.833a79.733 79.733 0 0 1 22.522 15.833l425.089 425.09c31.199 31.198 31.199 81.782 0 112.981L693.438 849.947a79.72 79.72 0 0 1-22.522 15.833c29.61 13.906 65.994 8.634 90.459-15.833l141.226-141.225c31.198-31.2 31.198-81.783 0.001-112.982z" fill="#8a8a8a" p-id="4669"></path></svg>
+
+              标签
+
+            </a>
+          </li>
+             	      
+          <li class="waves-block waves-effect">
+            <a href="/article"  class="hvr-icon-down" >
+              <svg t="1596284020446" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10223" width="16" height="16"><path d="M356.573 768.21h-255.83v-36.537h255.83v-73.55h-255.83v-36.535h255.83v-72.435h-255.83v-37.93h255.83v-71.279h-255.83v-36.536h255.83V183.317H27.631V1024h621.388l0.08-146.741-292.526-0.319V768.21zM795.203 0v219.295h219.334L795.203 0zM760.02 1.355H393.15v839.05h621.388V256.786l-254.516-0.16V1.356z m181.405 693.384H466.26v-35.181h475.166v35.181z m0-109.17H466.26v-37.053h475.166v37.054z m0-146.222v36.535H466.26v-36.535h475.166z" fill="#8a8a8a" p-id="10224"></path></svg>
+              文章
+            </a>
+          </li>
+	      
+          <li class="label">
+            <span>
+              站外 | Outside
+            </span>
+          </li> 
+       
+          <li class="waves-block waves-effect">
+            <a href="https://github.com/Ravello-H" target="_blank" class="hvr-icon-down" >
+             <svg t="1596284061323" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11039" width="16" height="16"><path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512" fill="#8a8a8a" p-id="11040"></path></svg>
+              GitHub
+            </a>
+          </li>
+      
+          <li class="waves-block waves-effect">
+            <a href="/about"  class="hvr-icon-down" >
+             <svg t="1596284149401" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11931" width="16" height="16"><path d="M512 84.473c223.010 0 406.194 183.186 406.194 406.194s-183.186 406.194-406.194 406.194c-223.010 0-406.194-183.186-406.194-406.194 0-223.010 183.186-406.194 406.194-406.194zM512 40.667c-248.894 0-450 201.106-450 450s201.106 450 450 450c248.894 0 450-201.106 450-450 0-248.894-201.106-450-450-450v0zM543.858 640.004c-17.92 17.92-41.814 33.849-49.778 39.823 3.982-21.902 23.894-71.682 49.778-157.3 25.884-87.61 27.877-101.549 27.877-109.513 0-11.947-3.983-23.894-13.938-31.858-21.903-17.92-57.743-13.938-103.539 11.947-23.894 13.938-49.778 35.841-79.645 69.69l-15.929 15.929 51.771 39.823 11.947-13.938c13.938-11.947 45.796-39.823 51.771-45.796-39.823 129.425-79.645 226.99-79.645 262.832 0 15.929 5.973 29.867 13.938 39.823 9.955 9.955 23.894 15.929 39.823 15.929 13.938 0 31.859-5.973 53.761-17.92 17.92-11.947 45.796-33.849 85.62-71.682l15.929-15.929-45.796-45.796-13.938 13.938zM504.035 217.879c-9.955 11.947-15.929 27.877-15.929 45.796 0 15.929 3.982 27.877 13.938 37.832 9.955 9.955 21.903 15.929 35.841 15.929 11.947 0 27.877-3.982 43.806-21.902 11.947-11.947 17.92-27.877 17.92-45.796 0-13.938-3.983-27.877-13.938-37.832-19.912-19.912-57.743-17.92-81.637 5.973v0z" p-id="11932" fill="#8a8a8a"></path></svg>
+             关于
+            </a>
+          </li>
+           
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+
+<svg t="1596283053386" class="icons" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5094" width="32" height="32"><path d="M79.169331 113.350554l121.006899 0 0 120.557773-121.006899 0 0-120.557773ZM324.965581 113.350554l647.967334 0 0 120.557773-647.967334 0 0-120.557773ZM79.169331 444.549837l121.006899 0 0 120.557773-121.006899 0 0-120.557773ZM324.965581 444.549837l647.967334 0 0 120.557773-647.967334 0 0-120.557773ZM79.169331 754.840781l121.006899 0 0 120.334643-121.006899 0 0-120.334643ZM324.965581 754.840781l647.967334 0 0 120.334643-647.967334 0 0-120.334643Z" p-id="5095" fill="#e6e6e6"></path></svg>
+
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <div>
+
+                
+                动态
+                
+            </div>
+            <div>
+                
+                Ravello-H Github临时站
+                
+            </div>
+           
+        </div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+
+<svg t="1596284342381" class="icon" viewBox="1024 1024 1024 1024" version="1.2" xmlns="http://www.w3.org/2000/svg" p-id="16238" width="32" height="32"><path d="M261.04 478.06L649.74 89.38c18.74-18.74 49.14-18.74 67.88 0l45.34 45.34c18.72 18.72 18.74 49.04 0.08 67.8L454.98 512l308.04 309.5c18.68 18.76 18.64 49.08-0.08 67.8l-45.34 45.34c-18.74 18.74-49.14 18.74-67.88 0L261.04 545.94c-18.74-18.74-18.74-49.14 0-67.88z" p-id="16239" fill="#e6e6e6"></path></svg>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="on"
+                placeholder="搜索Ravello-H">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+              
+  <svg t="1596284413021" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2530" width="32" height="32"><path d="M863.38 825.09L714.17 675.88c48.01-57.12 74.18-128.58 74.18-204.08 0-84.89-33.06-164.7-93.08-224.72C635.24 187.05 555.44 154 470.55 154c-84.89 0-164.7 33.06-224.72 93.08s-93.08 139.83-93.08 224.72 33.06 164.7 93.08 224.72 139.83 93.08 224.72 93.08c76.22 0 148.33-26.67 205.72-75.56l149.08 149.08a26.805 26.805 0 0 0 19.01 7.88c6.88 0 13.76-2.63 19.01-7.88a26.805 26.805 0 0 0 7.88-19.01c0-6.89-2.62-13.77-7.87-19.02zM206.53 471.8c0-145.58 118.44-264.02 264.02-264.02 145.58 0 264.02 118.44 264.02 264.02S616.13 735.82 470.55 735.82c-145.58 0-264.02-118.44-264.02-264.02z" fill="#e6e6e6" p-id="2531"></path></svg>
+		</a>
+        </div>
+              
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+        
+  <svg t="1596284449761" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3487" width="32" height="32"><path d="M814.08 640c-58.368 0-109.568 28.672-141.312 72.704l-204.288-101.376c28.16-39.424 44.544-87.552 44.544-139.776 0-43.008-11.264-82.944-30.72-117.76l245.76-99.84c25.088 43.008 71.68 71.68 124.928 71.68 79.872 0 144.896-65.024 144.896-144.896S932.864 35.84 853.504 35.84s-144.896 65.024-144.896 144.896c0 4.608 0 9.728 0.512 14.336L444.416 302.08C400.384 257.024 338.944 228.864 271.36 228.864 137.728 228.864 29.184 337.408 29.184 471.04c0 133.632 108.544 242.176 242.176 242.176 58.368 0 112.128-20.992 154.112-55.296l221.184 110.08c-4.096 14.848-6.144 30.208-6.144 46.08 0 95.744 78.336 174.08 174.08 174.08s174.08-78.336 174.08-174.08-78.848-174.08-174.592-174.08z m39.424-542.72c46.08 0 83.456 37.376 83.456 83.456s-37.376 83.456-83.456 83.456-83.456-37.376-83.456-83.456S807.424 97.28 853.504 97.28z m-762.88 373.76c0-99.84 80.896-180.736 180.736-180.736 99.84 0 180.736 80.896 180.736 180.736S371.2 651.776 271.36 651.776c-99.84 0-180.736-80.896-180.736-180.736zM814.08 926.72c-61.952 0-112.64-50.688-112.64-112.64s50.688-112.64 112.64-112.64 112.64 50.688 112.64 112.64-50.688 112.64-112.64 112.64z" fill="#e6e6e6" p-id="3488"></path></svg>
+        </a>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="darkThemeToggle" onclick="darkThemeToggle();">
+            <svg t="1596284520376" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9812" width="32" height="32"><path d="M707.291429 273.554286A308.516571 308.516571 0 0 1 818.468571 512a306.468571 306.468571 0 0 1-121.051428 245.906286c-18.724571 14.336-29.476571 33.645714-29.476572 53.248a59.245714 59.245714 0 0 1-59.245714 59.245714H424.740571a57.782857 57.782857 0 0 1-57.856-57.782857c0-20.626286-8.630857-39.497143-22.454857-49.444572C248.100571 694.125714 200.777143 577.243429 220.891429 457.874286c20.626286-122.148571 113.956571-221.110857 232.301714-246.345143a298.276571 298.276571 0 0 1 254.098286 61.878857zM617.764571 921.6c27.721143 0 50.176 22.893714 50.176 51.2 0 28.306286-22.454857 51.2-50.176 51.2H417.060571a50.761143 50.761143 0 0 1-49.005714-51.2c0-27.794286 21.723429-50.541714 49.005714-51.2h200.777143zM517.412571 0c27.794286 0 50.176 22.454857 50.176 50.176v53.248a50.176 50.176 0 1 1-100.352 0V50.176c0-27.721143 22.454857-50.176 50.176-50.176z m354.889143 222.281143l-35.547428 36.278857a49.664 49.664 0 0 1-70.948572 0 51.712 51.712 0 0 1 0-72.411429l35.547429-36.205714a49.737143 49.737143 0 0 1 70.948571 0c19.748571 20.041143 19.748571 52.224 0 72.338286z m52.370286 245.394286h48.128a51.2 51.2 0 0 1 0 102.4h-48.128a51.2 51.2 0 1 1 0-102.4z m-726.601143-209.188572l-35.474286-36.205714a51.712 51.712 0 0 1 0-72.411429 49.664 49.664 0 0 1 70.948572 0l35.474286 36.278857c19.748571 20.114286 19.748571 52.297143 0 72.411429a49.737143 49.737143 0 0 1-70.948572 0zM0 518.875429a51.2 51.2 0 0 1 51.2-51.2h48.128a51.2 51.2 0 1 1 0 102.4H51.2a51.2 51.2 0 0 1-51.2-51.2z" p-id="9813" fill="#e6e6e6"></path></svg>
+            
+		<svg t="1596284558943" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10687" width="32" height="32"><path d="M756.004571 146.724571A328.045714 328.045714 0 0 1 877.714286 402.212571c0 104.667429-48.274286 200.704-132.388572 263.533715-20.48 15.36-32.182857 36.132571-32.182857 57.051428 0 35.108571-28.452571 63.488-63.488 63.488H445.952a61.952 61.952 0 0 1-61.952-62.025143c0-22.016-9.435429-42.276571-24.502857-52.882285a327.826286 327.826286 0 0 1-135.094857-327.094857A327.899429 327.899429 0 0 1 478.208 80.457143a330.898286 330.898286 0 0 1 277.796571 66.340571zM658.285714 841.142857A54.857143 54.857143 0 0 1 658.285714 950.857143H438.857143a54.857143 54.857143 0 0 1 0-109.714286h219.428571z" p-id="10688" fill="#e6e6e6"></path></svg>
+        </a>
+    </div>
+</header>
+<header class="content-header index-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">动态</h1>
+        
+            
+    <section class="header5 cid-r3mcMCaeWf mbr-fullscreen mbr-parallax-background" id="header5-3">
+        <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="mbr-white col-md-10">
+                    <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">记录并索引最新的更新内容<br>不过并没有什么实际用途，可能会在不久后被弃用<br>毕竟在静态站手动更新效果并不好。</p>
+                </div>
+            </div>
+        </div>
+    
+</header>
+
+
+
+<article class="page-article fade" itemprop="blogPage">
+        <div class="post-content page-content" id="page-content" itemprop="pageContent">
+            
+            <div style="text-align: center;">
+
+<div style="font-size: 30px">今日无动态。</div>
+
+<div style="color: #aaa">可能是因为今天全站并没有更新内容，<span class="404-random"><s>，或有但是并没有写入...</s></span><br>
+
+       
+<p><a href="/index.html">&lt; 返回主页</a></p>
+</div>
+
+
+        </div>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+  
+
+</div>
+
+    </article>
+    
+
+</div>
+
+       </div>
+
+
+<div style="font-size: 30px">历史动态：</div>
+
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+    <!-- 文章开始 -->
+    <li class="post-list-item fade">
+            <article id="post-changyan-test"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-8-1" datetime="2020-8-1T00:00:01.000Z"  itemprop="datePublished">2020-8-1</time>
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/classification/日志">日志</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/article/Repair1">Repair1</a></li></ul></li></ul>
+    </div>   
+ 
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/article/Repair1">Repair1</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    <h3>修复日志 #1</h3>
+        <p>感谢阿里巴巴图标库的支持，现在本站直接用svg格式的矢量图做为站内图标使用。
+        <br><s>尽管在某些地方还会造成偏移</s></p><br>
+<p>附:<br>阿里巴巴矢量图标库链接:<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a>，阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</p>
+	
+	
+
+    </div>
+    <div class="post-footer">
+        <a href="/article/Repair1" class="post-more waves-effect waves-button">
+            阅读全文 ›
+        </a>
+    
+        
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/修复" rel="tag">修复</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建设" rel="tag">建设</a></li>
+</ul>
+
+    
+    </div>
+    
+</article>
+
+        </li>
+        
+        <!-- 文章结束-->
+        <!-- 文章开始 -->
+
+    <li class="post-list-item fade">
+            <article id="post-changyan-test"
+  class="article-card article-type-post" itemprop="blogPost">
+
+   
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-7-17" datetime="2020-7-17T00:00:01.000Z"  itemprop="datePublished">2020-7-17</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/classification/杂谈">杂谈</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/article/BUG">BUG</a></li></ul></li></ul>
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/article/BUG">BUG</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <p>尽管已经部署到了Github，但是图标依旧不能正常显示...<s>那么直接点也不是不行</s>
+        <br>虽然没有达到预想效果..但至少能看了！</p><br>
+<p>（下次修好应该会等很久）</p>
+
+    </div>
+    <div class="post-footer">
+        <a href="/article/BUG" class="post-more waves-effect waves-button">
+            阅读全文 ›
+        </a>
+    
+        
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试" rel="tag">测试</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建设" rel="tag">建设</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/修复" rel="tag">修复</a></li>
+</ul>
+
+    
+    </div>
+    
+</article>
+
+        </li>
+        
+        <!-- 文章结束-->
+        
+    <!-- 文章开始 -->
+        <li class="post-list-item fade">
+            <article id="post-changyan-test"
+  class="article-card article-type-post" itemprop="blogPost">
+
+   
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-7-16" datetime="2020-7-16T00:00:01.000Z"  itemprop="datePublished">2020-7-16</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/classification/杂谈">杂谈</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/article/Hello World">Hello World</a></li></ul></li></ul>
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/article/Hello World">Hello World</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <p>Hello World ! 通过不少天的<s>奋斗</s>，本站于2020/7/16日成功创建，并计划于次日转至<strong>Github</strong>中。
+        <br>此静态站是由Hexo与Github作为基础共同制成，但是我发现自己似乎更适合直接上手HTML...于是就用<strong>IDEA</strong>+<strong>DroidEdit</strong>做了下，发现DE的表现出奇的不错（大概是安卓里面最好的了）</p><br>
+<p>虽然不知道这个站点用来做什么，但我想....总会找到的</p>
+<h2 id="鸣谢："><a href="#鸣谢：" class="headerlink" title="鸣谢："></a>鸣谢：</h2>
+<p>Hexo  Github  Other Github User</p>
+    
+
+    </div>
+    <div class="post-footer">
+        <a href="/article/Hello World " class="post-more waves-effect waves-button">
+            阅读全文 ›
+        </a>
+    
+        
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建设" rel="tag">建设</a></li></ul>
+
+    
+    </div>
+    
+</article>
+
+        </li>
+        
+        <!-- 正文结束 -->
+    
+    </ul>
+
+        <!-- 页脚 -->
+        
+<nav id="page-nav">
+    <div class="inner">
+    <span class="page-number current">1</span><a class="page-number" href="/page2.html">2</a><a class="extend next" rel="next" href="/page2.html">下一页</a><!-- 页码 -->
+    </div>
+</nav>
+
+</div>
+
+         <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+    <span id="busuanzi_container_page_pv" title="此页面来访:" style='display:none'> 
+        此页面来访数:<span id="busuanzi_value_page_pv"></span></span>
+</p><!-- 访客统计 -->
+
+<p>
+            原创内容使用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-ND 4.0)</a> 协议授权。
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+        
+            <span>Copyright &copy; 2019 - 2020 RavelloH. All rights reserved.</span>
+            <span>
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+            <span>The theme is adapted based on <a href="https://github.com/yscoder/hexo-theme-indigo"
+                    target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://ravello-h.github.io/&title=Ravello-H&pic=https://ravello-h.github.io/img/avatar.jpg" data-title="微博">
+         <svg t="1596287525716" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1802" width="32" height="32"><path d="M 512 1174.81 a 662.803 662.803 0 1 1 662.803 -662.803 a 662.444 662.444 0 0 1 -662.803 662.803 Z m 36.7553 -777.891 c -15.6665 1.80765 -65.0754 33.7427 -37.3579 -31.935 a 83.935 83.935 0 0 0 -30.1273 -91.5876 a 279.282 279.282 0 0 0 -145.817 12.6535 a 685.159 685.159 0 0 0 -294.645 320.556 c -57.8446 184.981 144.611 297.66 295.25 320.556 s 376.593 -14.4611 479.027 -139.791 c 75.9213 -91.5876 90.3821 -216.317 -53.0243 -252.467 c -47.6013 -11.4484 -19.8843 -31.3325 -7.83314 -65.0754 a 79.9583 79.9583 0 0 0 -62.6653 -93.3951 a 60.2549 60.2549 0 0 0 -9.64076 -1.2051 a 359.3 359.3 0 0 0 -133.164 21.6918 Z m 201.852 -112.074 a 67.0637 67.0637 0 0 0 -54.832 15.6665 c -7.23058 13.8587 -12.051 38.5632 27.717 47.6013 a 218.725 218.725 0 0 1 39.1657 5.42292 a 52.9038 52.9038 0 0 1 35.5503 59.6525 c -6.02549 55.4346 25.3072 64.4726 47.6013 49.4092 a 47.4207 47.4207 0 0 0 18.0765 -38.5632 a 118.642 118.642 0 0 0 -95.8052 -137.382 a 91.9489 91.9489 0 0 0 -18.0765 -1.80765 h 0.602549 Z m 213.906 2.41019 a 242.345 242.345 0 0 0 -197.034 -132.561 c -32.5375 -3.6153 -101.228 -11.4484 -109.061 33.1404 a 33.6825 33.6825 0 0 0 24.7044 40.3708 c 1.2051 0 2.41019 0.602549 3.6153 0.602549 a 283.559 283.559 0 0 0 45.1911 -1.80765 a 186.79 186.79 0 0 1 187.994 185.584 a 180.765 180.765 0 0 1 -1.80765 25.9095 c -1.80765 10.2433 -3.01273 20.4867 -4.21785 30.7299 a 36.8159 36.8159 0 0 0 28.3199 42.781 a 36.153 36.153 0 0 0 38.5632 -18.679 a 284.101 284.101 0 0 0 -16.8711 -206.07 h 0.602549 Z m -521.204 583.267 c -157.265 19.8843 -295.25 -48.2038 -307.9 -151.843 s 103.036 -203.661 260.301 -223.546 s 295.25 48.2038 308.508 151.843 s -104.241 204.265 -261.506 223.546 h 0.602549 Z m -42.781 -295.853 a 149.312 149.312 0 0 0 -154.252 141.598 a 134.368 134.368 0 0 0 142.201 126.535 a 81.6453 81.6453 0 0 0 12.051 -1.2051 a 158.591 158.591 0 0 0 149.435 -148.225 a 128.885 128.885 0 0 0 -136.778 -120.51 l -12.6535 1.80765 Z m 28.9226 122.317 a 19.2816 19.2816 0 0 1 -22.2943 -15.6665 v -2.41019 a 21.9327 21.9327 0 0 1 22.2943 -20.4867 a 18.4981 18.4981 0 0 1 21.0893 15.6665 a 2.22943 2.22943 0 0 1 0.602549 1.80765 a 23.2583 23.2583 0 0 1 -21.6918 21.0893 Z M 349.311 777.121 a 47.541 47.541 0 0 1 -53.6269 -40.9732 a 7.65236 7.65236 0 0 1 -0.602548 -3.6153 a 53.1449 53.1449 0 0 1 54.2292 -50.0115 a 45.0103 45.0103 0 0 1 52.4217 37.3579 a 13.2561 13.2561 0 0 1 0.602549 4.82038 a 56.4588 56.4588 0 0 1 -53.0243 52.4217 Z" fill="#e6e6e6" p-id="1803"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <svg t="1596287577316" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2712" width="32" height="32"><path d="M629.077333 397.141333c3.669333 0 7.253333 0.042667 10.837334 0.213334C620.928 293.418667 514.218667 213.802667 385.450667 213.802667 243.2 213.76 128 310.826667 128 430.506667c0 70.144 39.594667 132.565333 101.034667 172.16l2.389333 1.493333L206.506667 682.666667 299.605333 634.88l4.394667 1.28a301.952 301.952 0 0 0 98.730667 10.496 169.088 169.088 0 0 1-8.149334-51.712c0-109.226667 105.002667-197.845333 234.496-197.845333z m-154.026666-76.501333c19.968 0 36.096 15.786667 36.096 35.242667a35.669333 35.669333 0 0 1-36.096 35.242666 35.712 35.712 0 0 1-36.181334-35.242666c0-19.456 16.213333-35.242667 36.181334-35.242667z m-179.2 70.485333a35.712 35.712 0 0 1-36.138667-35.242666c0-19.456 16.213333-35.242667 36.138667-35.242667 20.010667 0 36.181333 15.786667 36.181333 35.242667 0 19.456-16.213333 35.242667-36.181333 35.242666z" p-id="2713" fill="#e6e6e6"></path><path d="M426.666667 604.16c0 98.048 105.088 177.493333 234.666666 177.493333 25.984 0 50.944-3.157333 74.24-9.045333l4.010667-1.066667 84.821333 39.125334-22.656-64.256 2.133334-1.237334C859.861333 712.746667 896 661.674667 896 604.16c0-98.048-105.045333-177.493333-234.666667-177.493333-129.578667 0-234.666667 79.445333-234.666666 177.493333z m283.392-61.141333c0-15.914667 14.72-28.842667 32.938666-28.842667 18.218667 0 32.938667 12.928 32.938667 28.842667 0 15.957333-14.72 28.885333-32.938667 28.885333-18.218667 0-32.938667-12.928-32.938666-28.885333z m-163.328 0c0-15.914667 14.762667-28.842667 32.938666-28.842667 18.218667 0 32.981333 12.928 32.981334 28.842667 0 15.957333-14.762667 28.885333-32.981334 28.885333-18.176 0-32.938667-12.928-32.938666-28.885333z" p-id="2714" fill="#e6e6e6"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ravello-h.github.io/&title=Ravello-H&source=A GitHub Blog by RavelloH" data-title=" QQ">
+          <svg t="1596287615796" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3597" width="32" height="32"><path d="M856.106667 720.298667a306.645333 306.645333 0 0 1-63.786667 101.034666c60.714667 18.517333 45.866667 50.645333 45.866667 50.645334 26.965333 14.805333 25.258667 111.018667-123.989334 109.312-99.498667-1.109333-141.653333-29.013333-158.848-47.573334a401.664 401.664 0 0 1-38.528 2.048c-15.914667 0-31.488-1.194667-46.848-2.944-16.597333 18.517333-58.538667 47.36-159.530666 48.469334-149.034667 1.706667-150.741333-94.506667-123.776-109.312 0 0-16.256-34.56 52.522666-52.693334a303.317333 303.317333 0 0 1-65.450666-109.44c-62.378667 110.805333-92.458667 37.376-87.978667-47.488 4.010667-75.349333 70.4-160.981333 87.637333-181.930666a67.882667 67.882667 0 0 1-5.12-25.386667c0-18.346667 7.338667-35.072 19.328-47.616a49.92 49.92 0 0 1 22.314667-51.456c-0.085333-2.688-0.341333-5.290667-0.341333-8.021333C209.578667 179.370667 347.136 42.666667 516.778667 42.666667c169.728 0 307.2 136.704 307.2 305.28 0 5.12-0.298667 10.154667-0.554667 15.189333a49.792 49.792 0 0 1 13.354667 44.842667c11.818667 12.458667 19.328 28.8 19.328 47.061333 0 9.045333-1.92 17.621333-5.12 25.6 17.322667 21.290667 83.285333 106.88 87.253333 182.229333 4.352 82.56-23.722667 154.368-82.133333 57.429334z" p-id="3598" fill="#e6e6e6"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ravello-h.github.io/" data-title=" Facebook">
+          <svg t="1596287680077" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4419" width="32" height="32"><path d="M512 0C229.052632 0 0 229.052632 0 512s229.052632 512 512 512 512-229.052632 512-512S794.947368 0 512 0z m122.745263 512h-79.386947v269.473684h-117.921684V512H377.263158v-92.833684h60.173474v-56.643369c0-74.698105 33.684211-119.996632 127.514947-119.996631h79.386947v92.833684h-48.128c-36.109474 0-38.480842 13.608421-38.480842 36.217263v45.298526H646.736842L634.718316 512z" fill="#e6e6e6" p-id="4420"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Ravello-H&url=https://ravello-h.github.io/&via=https://ravello-h.github.io" data-title=" Twitter">
+          <svg t="1596287740833" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1862" width="32" height="32"><path d="M895.69609809 312.95650625c0 325.95156463-214.11265306 560.66612245-529.02748299 570.96707483-133.17659864 10.30095238-224.41360545-30.16707483-306.08544218-91.2370068 91.2370068 10.30095238 214.11265306-19.86612245 274.44680272-81.67183674-91.2370068 0-142.74176871-51.5047619-172.90884354-121.40408163h81.67183674C162.1211321 558.70779877 100.31541781 497.6378668 100.31541781 396.09990762c19.86612245 10.30095238 40.46802722 19.86612245 81.67183674 19.86612244-71.37088436-40.46802722-111.83891156-172.90884354-61.06993197-254.58068027 91.2370068 101.53795918 203.07591836 193.5107483 387.75727891 203.07591836-51.5047619-203.07591836 214.11265306-306.08544217 325.95156463-172.90884353 51.5047619-10.30095238 81.67183674-30.16707483 121.40408163-51.5047619-10.30095238 51.5047619-40.46802722 81.67183674-81.67183674 101.53795918 40.46802722 0 71.37088436-10.30095238 101.53795918-30.16707483-9.56517007 40.46802722-50.03319728 81.67183674-80.2002721 101.53795918z" fill="#e6e6e6" p-id="1863"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://ravello-h.github.io/" data-title=" Google+">
+
+<svg t="1596287814029" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2759" width="32" height="32"><path d="M879.488 470.4c-0.288-27.008-0.384-54.208-0.48-81.28h-80.8c-0.32 26.976-0.512 54.08-0.704 81.28-27.2 0.096-54.208 0.32-81.216 0.608v80.896c27.008 0.32 54.208 0.48 81.216 0.8 0.32 27.008 0.32 54.08 0.48 81.088h80.928c0.096-27.008 0.288-54.08 0.48-81.28 27.2-0.32 54.208-0.416 81.216-0.704v-80.896c-26.88-0.224-54.08-0.224-81.12-0.512z m-529.984 0.416c-0.096 32.288 0 64.672 0.096 96.96 54.208 1.824 108.48 1.024 162.688 1.824-23.904 120.32-187.392 159.296-273.888 80.704-88.992-68.896-84.8-220 7.68-284 64.704-51.616 156.608-38.912 221.312 5.792a1017.024 1017.024 0 0 0 72.096-74.688c-53.76-42.88-119.776-73.504-189.984-70.304-146.592-4.896-281.28 123.52-283.712 270.208-9.408 119.904 69.408 237.376 180.608 279.776 110.784 42.72 252.896 13.6 323.712-85.984 46.688-62.912 56.8-143.904 51.296-220a24646.144 24646.144 0 0 0-271.904-0.32z" p-id="2760" fill="#e6e6e6"></path></svg>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script src="/=statics/common.js"></script>
+
+<script>
+  var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+</body>
+</html>
+
+   
