@@ -53,3 +53,34 @@
 p {
       letter-spacing: 0.5px !important;
 }
+
+
+.banner-card {
+  text-align: center;
+}
+
+.banner-card .big {
+  font-size: 30px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+table.sortable tbody {
+  counter-reset: sortabletablescope;
+}
+table.sortable thead tr::before {
+  content: "";
+  display: table-cell;
+  text-align: center;
+  width: 4em;
+  border-bottom: 1px solid #dedede;
+}
+table.sortable tbody tr::before {
+  content: counter(sortabletablescope);
+  counter-increment: sortabletablescope;
+  display: table-cell;
+  text-align: center;
+  border-bottom: 1px solid #dedede;
+}
