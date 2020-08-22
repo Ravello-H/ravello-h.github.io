@@ -420,3 +420,4 @@ table.sortable
     width: 100% !important;
   }
 }
+.blockcode{overflow:hidden;margin:0;padding:0;background:transparent;color:#666;}.pmd .blockcode code{font-family:Monaco,Consolas,'Lucida Console','Courier New',serif;font-size:12px;line-height:1.8em;}* html .pmd .blockcode code{font-family:'Courier New',serif;}.pmm .pmt{right:-6px;left:auto;background-position:0 -47px;}.pmm .pmd{float:right;background:#FEF5E7 url(//mc.netease.com/static/image/common/pm-bg2.png) repeat-x;border-color:#FFC68C #F9D4A7 #F3BB65 #DDC4A9;-moz-box-shadow:-2px 2px 4px #DDD;-webkit-box-shadow:-2px 2px 4px #DDD;box-shadow:-2px 2px 4px #DDD;-moz-border-radius:10px 10px 0 10px;-webkit-border-radius:10px 10px 0 10px;border-radius:10px 10px 0 10px;}
