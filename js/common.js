@@ -371,20 +371,6 @@ window.urlParam = function (variable) {
       )
     )
   );
-  // 格式化URL
-  for (let i = 0; i < path.length; i++) {
-    var thisPath = '';
-    if (i > 0) {
-      thisPath = pathurl[(i - 1)]['url'] + path[i] + '/';
-    } else {
-      thisPath = '/' + path[i] + '/';
-    }
-    pathurl[i] = {
-      name: path[i],
-      url: thisPath
-    }
-  }
-
 
 /**
  * 表格移动优化
