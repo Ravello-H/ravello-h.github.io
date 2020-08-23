@@ -347,7 +347,21 @@
 </p>
             </div>
         </div>
-<p><a href="/index.html">&lt; 回到主页-5s后自动返回</a></p>
+        <base href="<%=basePath%>">
+  <p><a href="/index.html">&lt; 回到主页-</a></p><span id="tiao">3</span>
+  <a href="javascript:countDown" href="/index.html"> </a><p><a href="/index.html">s后自动返回</a></p>
+  <!--脚本开始-->
+  <script language="javascript" type="">
+function countDown(secs){
+ tiao.innerText=secs;
+ if(--secs>0)
+  setTimeout("countDown("+secs+")",1000);
+ }
+ countDown(5);
+ </script>
+  <!--脚本结束-->
+
+
 </div>
 
 
