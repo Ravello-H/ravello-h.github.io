@@ -8,21 +8,6 @@
 
 <title>Document</title>
 
-<base href="<%=basePath%>">
-  <title>My JSP 'ds04.jsp' starting page</title>
-  <span id="tiao">3</span>
-  <a href="javascript:countDown"> </a>秒后自动跳转……
-  <meta http-equiv=refresh content=3;url= '/ds02.jsp'/>
-  <!--脚本开始-->
-  <script language="javascript" type="">
-function countDown(secs){
- tiao.innerText=secs;
- if(--secs>0)
-  setTimeout("countDown("+secs+")",1000);
- }
- countDown(3);
- </script>
-  <!--脚本结束-->
 
 
 </head>
@@ -35,7 +20,7 @@ function countDown(secs){
 
 // 图片加载检测+写入
 
-if(document.getElementById('img3').onload = function(e)){
+if(document.getElementById('img1').onload = function(e)){
 
 e.stopPropagation();
 
