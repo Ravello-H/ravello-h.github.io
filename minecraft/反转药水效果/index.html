@@ -409,12 +409,27 @@
     </footer>
 </blockquote>
 
+<script>
 
+// 图片加载检测+写入
+
+document.getElementById('img3').onload = function(e){
+
+e.stopPropagation();
+
+document.getElementById("loadingtext").innerHTML = "图片加载完成 3/3";
+
+}
+
+</script>
   
 <div class="page-reward">
     <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赞</a>
 </div>
-
+<div class="post-footer">
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创" rel="tag">原创</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令" rel="tag">命令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/附图" rel="tag">附图</a></li>
+<ul>
+<div>
     </article>
     
 
@@ -514,7 +529,7 @@ document.getElementById('img3').onload = function(e){
 
 e.stopPropagation();
 
-document.getElementById("loadingtext").innerHTML = "<p>图片加载完成 3/3</p>";
+document.getElementById("loadingtext").innerHTML = "图片加载完成 3/3";
 
 }
 
