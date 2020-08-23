@@ -334,9 +334,50 @@
 </span>
 
 
-            <span id="readingTime">阅读大约需要 <span id="min">3 </span> 分钟</span>
+           
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
+        
+        
+        
+        <blockquote>
+         <p>此文章内容应用于<code>Java 1.1x</code>版本</p>
+         <p id="loading">当前图片加载进度:0/3 请稍作等待</p>
+        </blockquote>
+            
+            
+            
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2>
+
+ <p>由于一些神奇的<del>BUG</del>特性，高等级效果将会使原效果被反转，而这就使得了一些原版不存在的操作变成了可能。例如，创造模式的玩家不免疫所有效果，只免疫负面效果，而这就使得了如果可以给予创造玩家一种增益效果但实际是负面效果，也是能对创造模式玩家造成伤害的。
+ <br>除此以外，对跳跃提升药水运用相同的原理也有奇效：玩家将会无法跳跃</p>
+
+
+<h3 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h3>
+<img id="img1" src="/minecraft/反转药水效果/show1.gif" class="" title="创造效果">
+<p>另外，这个药水所带来的伤害也高的离谱：</p>
+<img id="img2 src="/minecraft/反转药水效果/show2.gif" class="" title="血量效果">
+<p>也是因为未知原因，死亡后不掉落掉落物<sup><em>*开启死亡掉落的情况下</em></sup></p>
+<img id="img3" src="/minecraft/反转药水效果/show3.gif" class="" title="掉落效果">
+
+
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3>
+
+<figure class="highlight shell"><table><tr><td class="gutter">
+<pre>
+<span class="line">1</span><br>
+<span class="line">2</span><br>
+<span class="line">3</span><br>
+<span class="line">4</span><br>
+<span class="line">5</span><br>
+</pre></td><td class="code"><pre>
+<span class="line">/* 1.13+ */</span><br>
+<span class="line">/give @p minecraft:splash_potion{CustomPotionEffects:[{Id:6b,Duration:12000,Amplifier:125b,Ambient:0b,ShowParticles:0b}]} 1</span><br>
+<span class="line"> </span><br>
+<span class="line">/* 1.11-1.12 */</span><br>
+<span class="line">/give @p minecraft:splash_potion 1 0 {CustomPotionEffects:[{Id:6b,Duration:12000,Amplifier:125b,Ambient:0b,ShowParticles:0b}]}</span><br>
+</pre></td></tr></table></figure>
+
             <p><strong>Hexo 官方文档</strong>：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a> (有简体中文哟)</p>
 <h2 id="1-注册-GitHub-账号"><a href="#1-注册-GitHub-账号" class="headerlink" title="1.注册 GitHub 账号"></a>1.注册 GitHub 账号</h2><p><a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
 <h2 id="2-新建一个-Repo，名字如下"><a href="#2-新建一个-Repo，名字如下" class="headerlink" title="2.新建一个 Repo，名字如下"></a>2.新建一个 Repo，名字如下</h2><p><code>&lt;你的用户名&gt;.github.io</code></p>
