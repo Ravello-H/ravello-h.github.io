@@ -353,7 +353,7 @@
 <h3 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h3>
 <img id="img1" src="/minecraft/反转药水效果/show1.gif" class="" title="创造效果">
 <p>另外，这个药水所带来的伤害也高的离谱：</p>
-<img id="img2" src="/minecraft/反转药水效果/show2.gif" class="" title="血量效果">
+<img id="img2 src="/minecraft/反转药水效果/show2.gif" class="" title="血量效果">
 <p>也是因为未知原因，死亡后不掉落掉落物<sup><em>*开启死亡掉落的情况下</em></sup></p>
 <img id="img3" src="/minecraft/反转药水效果/show3.gif" class="" title="掉落效果">
 
@@ -375,14 +375,28 @@
 <span class="line">/give @p minecraft:splash_potion 1 0 {CustomPotionEffects:[{Id:6b,Duration:12000,Amplifier:125b,Ambient:0b,ShowParticles:0b}]}</span><br>
 </pre></td></tr></table></figure>
 
+<p>它会自己下载需要的文件</p>
+<h2 id="6-初始化-hexo"><a href="#6-初始化-hexo" class="headerlink" title="6.初始化 hexo"></a>6.初始化 hexo</h2><blockquote>
+<p>怎么在命令行里切换文件夹自行百度！！！</p>
+</blockquote>
+<p>进入你准备放置博客的文件夹输入：<code>hexo init</code></p>
+<p>它会自己下载需要的文件</p>
+<h2 id="7-写博客"><a href="#7-写博客" class="headerlink" title="7.写博客"></a>7.写博客</h2><p>文件夹<code>source</code>内的文件就是你的博文，采用<code>Markdown 语法</code>，Markdown 是什么自行百度！！！</p>
+<blockquote>
+<p>其他设置请看官方文档 <a href="#">↑</a></p>
+</blockquote>
+<h2 id="8-预览博客"><a href="#8-预览博客" class="headerlink" title="8.预览博客"></a>8.预览博客</h2><p>输入：<code>hexo server</code></p>
+<p>打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 可以预览你的博客</p>
+<h2 id="9-发布到-GitHub"><a href="#9-发布到-GitHub" class="headerlink" title="9.发布到 GitHub"></a>9.发布到 GitHub</h2><p>修改<code>./_config.yml</code>最底下的内容</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:&lt;你的用户名&gt;/&lt;你的用户名&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
-<div class="post-footer">
-    	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创" rel="tag">原创</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令" rel="tag">命令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/附图" rel="tag">附图</a></li>
-</ul>
-</div>
+<p>然后依次输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
-
-        </li>
+<p>按提示输入你的 GitHub 用户名和邮件地址以及密码。</p>
+<h2 id="10-大功告成"><a href="#10-大功告成" class="headerlink" title="10.大功告成"></a>10.大功告成</h2><p>访问 https://&lt;你的用户名&gt;.github.io</p>
+<p>想让自己的博客变得更好看，请看官方文档 <a href="#">↑</a></p>
+<h2 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h2><p>包教不包会，因为我也不懂编程，都是跟着文档来的，遇到问题请复制粘贴错误代码，然后扔进百度，<del>如果不喜欢百度，也可以用必应或者搜狗</del>。</p>
 
         </div>
 
@@ -416,10 +430,13 @@
 </div>
 
     </article>
-  
+    
+
+</div>
 
         </div>
-       
+        
+    </div>
 </div>
 
 
@@ -503,19 +520,6 @@
     </ul>
  </div>
 
-<script>
-
-// 图片加载检测+写入
-
-document.getElementById('img3').onload = function(e){
-
-e.stopPropagation();
-
-document.getElementById("loading").innerHTML = "图片加载完成 3/3";
-
-}
-
-</script>
 
 
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
