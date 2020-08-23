@@ -293,12 +293,7 @@
     </div>
 </header>
 <header class="content-header post-header">
-<aside class="post-widget">
-        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
-            <h4>目录</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">原理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#展示"><span class="post-toc-number">2.</span> <span class="post-toc-text">展示</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#命令"><span class="post-toc-number">3.</span> <span class="post-toc-text">命令</span></a></li></ol>
-        </nav>
-    </aside>
+
     <div class="container fade-scale">
         <h1 class="title">Minecraft-反转药水效果</h1>
         <h5 class="subtitle">
@@ -321,7 +316,12 @@
 
 <div class="container body-wrap">
     
-    
+ <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">原理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#展示"><span class="post-toc-number">2.</span> <span class="post-toc-text">展示</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#命令"><span class="post-toc-number">3.</span> <span class="post-toc-text">命令</span></a></li></ol>
+        </nav>
+    </aside>   
 
 
 <article id="反转药水效果"
@@ -347,7 +347,7 @@
          <p>此文章内容应用于<code>Java 1.1x</code>版本</p>
         </blockquote>
          <blockquote>
-          <p id="loading">当前图片加载进度:0/3 请稍作等待</p>
+          <p id="loadingtext">当前图片加载进度:0/3 请稍作等待</p>
         </blockquote>
             
             
@@ -514,7 +514,7 @@ document.getElementById('img3').onload = function(e){
 
 e.stopPropagation();
 
-document.getElementById("loading").innerHTML = "<p>图片加载完成 3/3</p>";
+document.getElementById("loadingtext").innerHTML = "<p>图片加载完成 3/3</p>";
 
 }
 
