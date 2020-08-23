@@ -508,10 +508,35 @@
       
     </ul>
  </div>
-
 <script>
 
-// 图片加载检测+写入
+// 图片加载检测+写入1
+
+document.getElementById('img1').onload = function(e){
+
+e.stopPropagation();
+
+document.getElementById("loadingtext").innerHTML = "图片加载中 1/3";
+
+}
+
+</script>
+<script>
+
+// 图片加载检测+写入2
+
+document.getElementById('img2').onload = function(e){
+
+e.stopPropagation();
+
+document.getElementById("loadingtext").innerHTML = "图片加载中 2/3";
+
+}
+
+</script>
+<script>
+
+// 图片加载检测+写入3
 
 document.getElementById('img3').onload = function(e){
 
